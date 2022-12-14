@@ -3,6 +3,5 @@ export interface companymodel{
     name:string,
     empcount:number,
     revenue:number,
-    address:string,
-    isactive:boolean
+    address:string
 }
