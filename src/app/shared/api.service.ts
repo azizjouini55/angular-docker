@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { companymodel } from '../Model/companymodel';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +10,7 @@ import { companymodel } from '../Model/companymodel';
 export class ApiService {
 
   constructor(private http: HttpClient) { }
+   //apiurl=environment.host;
   apiurl = 'http://localhost:3000/company';
 
   Getallcomapny(): Observable<companymodel[]> {
